@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benyahya Amine</title>
+
+    <style>
+
+        :root {
+            --color1: #D89584;
+
+        }
+        body{
+            margin: 0;}
+
+        div.cover{
+            background: url(cover_overlay.png) no-repeat center/100% 100%,url(cover.jpg) no-repeat center/cover;
+
+            height: 360px;
+        }
+        
+        img.cover-profile{
+            position: relative;
+            left: 50%;
+            height: 100px;
+            margin-top: 50px;
+            margin-left:-50px;
+        }
+
+        h1{
+            color: white;
+            text-align:center;
+        }
+
+        div.cover p {
+            color: white;
+            text-align:center;
+            position: relative;
+            }
+        
+        div.cover-contact{
+            background-color: #FF000080;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-left: 4px solid var(--color1);
+            padding-left: 8px;
+        }
+
+        div.cover-contact p{
+            text-align: left;
+        }
+
+        div.cover-contact *{
+            font-size: 14px;
+            color: white;
+        }
+
+        a.contact-button{
+            color: var(--color1);
+            border: 3px solid var(--color1);
+            padding: 8px 20px;
+            text-decoration: none;
+            background-color: #00000040;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        a.contact-button:hover{
+            background-color: var(--color1);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img class="cover-profile" src="profile.png" alt="profile">
+        <h1>Benyahya Amine</h1>
+        <p>Développeur Python</p>
+
+        <div style="text-align: center">
+            <a class ="contact-button"href="mailto:abeny479@gmail.com?subject=Contact%20depuis%20BenyahyaAmine.com">ME CONTACTER</a>
+        </div>
+    <div class="cover-contact">
+       <p><a href="mailto:abeny479@gmail.com?subject=Contact%20depuis%20BenyahyaAmine.com">abeny479@gmail.com</a></p> 
+        <p><a href="tel:+33634627648">06 34 62 76 48</a></p> 
+    </div>
+    </div>
+    
+</body>
+</html>
