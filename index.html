@@ -4,90 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benyahya Amine</title>
-
-    <style>
-
-        :root {
-            --color1: #D89584;
-
-        }
-        body{
-            margin: 0;}
-
-        div.cover{
-            background: url(cover_overlay.png) no-repeat center/100% 100%,url(cover.jpg) no-repeat center/cover;
-
-            height: 360px;
-        }
-        
-        img.cover-profile{
-            position: relative;
-            left: 50%;
-            height: 100px;
-            margin-top: 50px;
-            margin-left:-50px;
-        }
-
-        h1{
-            color: white;
-            text-align:center;
-        }
-
-        div.cover p {
-            color: white;
-            text-align:center;
-            position: relative;
-            }
-        
-        div.cover-contact{
-            background-color: #FF000080;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            border-left: 4px solid var(--color1);
-            padding-left: 8px;
-        }
-
-        div.cover-contact p{
-            text-align: left;
-        }
-
-        div.cover-contact *{
-            font-size: 14px;
-            color: white;
-        }
-
-        a.contact-button{
-            color: var(--color1);
-            border: 3px solid var(--color1);
-            padding: 8px 20px;
-            text-decoration: none;
-            background-color: #00000040;
-            display: inline-block;
-            margin-top: 15px;
-        }
-
-        a.contact-button:hover{
-            background-color: var(--color1);
-            color: white;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- COUVERTURE -->
     <div class="cover">
-        <img class="cover-profile" src="profile.png" alt="profile">
+        <img class="cover-profile" src="profile.png"/>
         <h1>Benyahya Amine</h1>
-        <p>Développeur Python</p>
-
-        <div style="text-align: center">
-            <a class ="contact-button"href="mailto:abeny479@gmail.com?subject=Contact%20depuis%20BenyahyaAmine.com">ME CONTACTER</a>
+        <p>Développeur Fullstack | missions freelance</p>
+        
+        <div style="text-align: center;">
+            <a class="contact-button" href="mailto:abeny479@gmail.com?subject=Contact%20depuis%20">ME CONTACTER</a>
         </div>
-    <div class="cover-contact">
-       <p><a href="mailto:abeny479@gmail.com?subject=Contact%20depuis%20BenyahyaAmine.com">abeny479@gmail.com</a></p> 
-        <p><a href="tel:+33634627648">06 34 62 76 48</a></p> 
+        <div class="cover-contact">
+            <p><a href="mailto:abeny479@gmail.com?subject=Contact%20depuis%20">abeny479@gmail.com</a></p>
+            <p><a href="tel:+33634627648">06 34 62 76 48</a></p>
+        </div>
     </div>
+
+    <!-- SECTION GRISE 1 -->
+    <div class="section section-grise1">
+        <div class="separateur"></div>
+        <p>Je développe <b>votre projet WEB</b> ou vos <b>Applications mobiles</b> de A à Z</p>
     </div>
+
+    <!-- SECTION BLANCHE -->
+    <div class="section">
+        <h2>En savoir plus</h2>
+        <img src="profile2.jpg" class="col-contenu" style="width: 100%; max-width: 480px; margin-right: 20px; margin-bottom: 10px; float: right: margin-left: 20px; margin-top: 0px; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);" />
+        <div class="col-contenu float-right">
+            <div class="texte-avec-ligne-verticale">
+                <p>Amine, 24 ans,Je suis développeur <b>Fullstack</b> chez EDF, spécialisé en <b>Python</b> et <b>JavaScript</b>. Passionné par la programmation, je propose mes services 
+                     personnalisés pour des missions freelance.<br><br>
+                    Expert dans les domaines du <b>web</b> et des <b>applications mobiles</b>.</p>
+                <a href="https://fr.linkedin.com/in/amine-benyahya-1383b6243?trk=public_profile_samename-profile&challengeSource=AgEP3k4sj5K1EAAAAYvF_THfcMxLUTFda1afeu_rVkWlvyhSG23sgzdFjEbT_qE&challegeType=AgGZc15umNW3owAAAYvF_THinqa3mGGqGEjLXQ-WfOLgy3ipd2LfLBk&memberId=AgG02dPi-WO_8wAAAYvF_THlULllq1X8ySBDpaTgHpVHrA0&recognizeDevice=AgFpe3_6GfrljgAAAYvF_THnMyrVM9D0b3ILwgflPfF6juexE7CV&original_referer=https%3A%2F%2Fwww.linkedin.com%2F&challengeId=AQG3UvAeoYLgMAAAAYvF_cC8tLO0NiQFohLXUJzjwYn1a0RqCENJavV6e7CKPnfl5lbVwSMTz4m2eNaCNL8wmDWxFN0dzHeVGA&submissionId=5411fe23-db05-9717-6565-ed83f4fbf629&challengeSource=AgGCRfbH9A7CagAAAYvF_cU13QeYKSHFL2KELcROn2RBPHq5Dh1x9U1Z2DPVt5Y&challegeType=AgFCyTMoAxA0YAAAAYvF_cU4GskfY8gBJK7wvyqp9QGTuxz1OOeXfMo&memberId=AgEPGU1GK3f_VQAAAYvF_cU61QaAlszGXVu8-InUZzglG-4&recognizeDevice=AgFzYBrQRcv_5gAAAYvF_cU9AxhVhOL9jUAmWsk81uuhUjwLKuq6" target="_blank">En savoir plus sur mon profil</a>
+            </div>
+        </div>
+        
+    </div>
+
+<!-- SECTION GRISE 2 -->
+<div class="section section-grise2">
+    <h2>Compétences</h2>
+    <div class="skills-container">
+        <a href="portfolio-api.html" class="skill-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png" alt="Python">
+            <p>Python</p>
+        </a>
+        <a href="portfolio-game-java.html" class="skill-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/152/152760.png" alt="Java">
+            <p>Java</p>
+        </a>
+        <a href="votre_lien_javascript" class="skill-item">
+            <img src="C:\Users\soso8\Downloads\158189728-initial-letter-js-logo-minuscule-magenta-et-orange-design-de-logo-moderne-et-simple-removebg-preview.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </a>
+        <a href="https://github.com/amine2000beny/ReactExo" class="skill-item">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React">
+            <p>React</p>
+        </a>
+        <a href="https://github.com/amine2000beny" class="skill-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub QR Code" class="qr-code">
+            <p>GitHub</p>
+        </a>
+    </div>
+</div>
+
+
+    <!-- SECTION BLANCHE FRAME -->
+    <iframe src="contact-frame.html" scrolling="no"/>
+
     
 </body>
 </html>
