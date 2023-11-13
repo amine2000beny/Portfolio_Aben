@@ -397,3 +397,28 @@ div.project-container {
     margin-top: 30px;
     /* Ajoutez le style nécessaire pour l'image et le lien ici */
 }
+
+.skill-hover-effect {
+    transition: transform 0.3s ease;
+}
+
+.skill-hover-effect:hover {
+    transform: scale(1.1); /* Augmente légèrement la taille */
+    cursor: pointer;
+}
+
+.parallax-section {
+    min-height: 0px; /* ou la hauteur que vous souhaitez */
+    background-image: url('https://files.123freevectors.com/wp-content/original/131372-grey-and-white-polygon-background-design-vector.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  body {
+    background-image: url('https://files.123freevectors.com/wp-content/original/131372-grey-and-white-polygon-background-design-vector.jpg');
+    background-size: cover;
+    animation: moveBackground 30s backwards;
+
+}
