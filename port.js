@@ -15,4 +15,31 @@ window.addEventListener('scroll', function() {
     const speed = 0.5; // Vitesse de l'effet parallaxe
     parallaxSection.style.backgroundPositionY = -(window.scrollY * speed) + "px";
   });
-  
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.animate-on-scroll');
+    hiddenElements.forEach(el => observer.observe(el));
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    fadeElements.forEach(element => {
+        // Ajoutez une légère temporisation pour voir l'effet de fondu
+        setTimeout(() => {
+            element.style.opacity = 1;
+        }, 500);
+    });
+});
+
+
+
+
