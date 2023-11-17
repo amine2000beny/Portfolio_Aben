@@ -60,7 +60,7 @@ div.cover-contact {
 
 div.cover-contact p {
     text-align: left;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 0px;
 }
 
@@ -70,7 +70,7 @@ div.cover-contact p:first-child {
 
 div.cover-contact * {
     color: white;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 a.contact-button {
@@ -96,9 +96,9 @@ a.contact-button:hover {
 }
 
 .section {
-    padding-left: 40px;
+    padding-left: 100px;
     padding-right: 40px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
     overflow: auto;
 }
@@ -389,4 +389,149 @@ div.project-container {
 /* Effet de fondu au survol */
 .hover-fade-in:hover {
     opacity: 1;
+}
+
+.skill-item {
+    position: relative;
+    display: inline-block;
+    /* Autres styles pour .skill-item */
+}
+
+.skill-item {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skill-item img {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+}
+
+.skill-item::after {
+    content: attr(data-skill-level) ' - ' attr(data-skill-description);
+    position: absolute;
+    top: -150px; 
+    left: 100%;
+    transform: translateX(-50%); 
+    background: url('buble.png') no-repeat center center;
+    width: 160px;
+    height: 100px;
+    background-size: contain; 
+    color: rgba(215, 60, 60, 0.619)464; /* Couleur de texte */
+    text-align: center;
+    padding-top: 30px; /* Ajustez pour que le texte apparaisse dans la bulle */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.skill-item:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.linkedin-btn-container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    background: url('C:/Users/soso8/Downloads/linkedin3-removebg-preview.png') no-repeat center center; /* Assurez-vous que le chemin d'accès à l'image est correct */
+    background-size: contain; /* Pour s'assurer que l'image couvre le bouton */
+    width: 200px; /* Ajustez selon la taille de votre bouton */
+    height: 100px; /* Ajustez selon la taille de votre bouton */
+    text-decoration: none; /* Supprimez le soulignement du texte */
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Animation douce pour la rotation */
+}
+
+.linkedin-title {
+    margin-top: 10px; /* Ajustez l'espace entre le bouton et le titre */
+    color: rgb(151, 160, 213); /* Couleur du titre */
+    font-size: 1.2em; /* Taille du titre */
+    text-align: center;
+
+}
+
+/* Effet au survol sur le bouton */
+.linkedin-btn:hover {
+    transform: rotate(360deg); /* Fait tourner l'image sur 360 degrés */
+}
+
+/* Stylisez le conteneur de la barre verticale */
+.vertical-slider {
+    position: relative;
+    height: 300px; /* Ajustez à la hauteur que vous voulez pour la barre */
+    width: 100px; /* La largeur de la barre */
+    margin: 20px auto; /* Pour centrer */
+}
+
+/* Stylisez la piste de la barre */
+.slider-track {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right : 300%;
+    transform: translateX(-80%);
+    background: url('barretapes-removebg-preview.png') no-repeat center center;
+    background-size: 100% auto;
+    width: 20px; /* La largeur de la piste */
+}
+
+/* Stylisez le curseur de la barre */
+.slider-thumb {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px; /* La largeur du curseur */
+    height: 0px; /* La hauteur du curseur */
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.timeline-container {
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.timeline {
+    position: relative;
+    width: 200px; /* Ajustez en fonction de la largeur de votre sidebar */
+    padding: 20px;
+    background: url('"C:/Users/soso8/Downloads/space-with-stars-background-galaxy-vector-11544983-removebg-preview.png"' ) no-repeat center center;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timeline-dot {
+    width: 10px;
+    height: 100px;
+    background: #681168;
+    border-radius: 80%;
+    margin-right: 20px;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #ffffff;
+    
+}
+
+.timeline-content {
+    font-weight: bold;
+    color: #ffffff;
 }

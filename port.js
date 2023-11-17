@@ -40,6 +40,56 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const skillItems = document.querySelectorAll('.skill-item');
+
+    skillItems.forEach(skill => {
+        skill.addEventListener('mouseenter', () => {
+            // Ajoutez ici l'animation ou le style que vous voulez appliquer
+            skill.classList.add('skill-animate');
+        });
+
+        skill.addEventListener('mouseleave', () => {
+            // Retirez l'animation ou le style lorsque la souris quitte l'élément
+            skill.classList.remove('skill-animate');
+        });
+    });
+});
+
+
+// Sélectionnez la piste de la barre et le curseur
+const sliderThumb = document.querySelector('.slider-thumb');
+const sliderTrack = document.querySelector('.slider-track');
+
+// Fonction pour démarrer le drag
+function startDrag(e) {
+    e.preventDefault();
+    document.addEventListener('mousemove', onDrag);
+    document.addEventListener('mouseup', endDrag);
+    sliderThumb.style.transition = 'none'; // Supprime la transition pendant le drag
+}
+
+// Fonction pour le drag
+function onDrag(e) {
+    let rect = sliderTrack.getBoundingClientRect();
+    let thumbHalfHeight = sliderThumb.offsetHeight / 2;
+    let newTop = e.clientY - rect.top - thumbHalfHeight;
+    newTop = Math.max(0, newTop); // Limite supérieure
+    newTop = Math.min(rect.height - thumbHalfHeight * 2, newTop); // Limite inférieure
+    sliderThumb.style.top = newTop + 'px';
+}
+
+// Fonction pour terminer le drag
+function endDrag() {
+    document.removeEventListener('mousemove', onDrag);
+    document.removeEventListener('mouseup', endDrag);
+    sliderThumb.style.transition = 'transform 0.3s ease-in-out'; // Rétablit la transition
+}
+
+// Ajoutez les écouteurs d'événements
+sliderThumb.addEventListener('mousedown', startDrag);
+
+document.body.style.overflow = 'hidden';
 
 
 
